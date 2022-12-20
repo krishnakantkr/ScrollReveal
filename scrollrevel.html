@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/scrollreveal"></script>
+	<!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
+</head>
+<body>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      padding: 100px;
+    }
+    .d{
+      margin-top: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .headline{
+      width:12rem;
+      height:12rem;
+      font-size:50px;
+      border-radius: 50%;
+      background:orange;
+      transitions:all 10000s ease;
+    }
+    
+     .headline2{
+      /* padding: 5%; */
+      width:14rem;
+      height:38rem;
+      margin-top: -26rem;
+      border-radius: 20% 20% 0 0;
+      font-size:50px;
+      background:lightgreen;
+      transitions:all 2000s linear;
+    }
+    .by{
+      
+      margin-top:12rem ;
+      margin-left: 48%;
+      opacity: 0.1;
+    }
+    
+   
+    </style>
+
+	<div class="d">
+    <div class="headline">
+     
+    </div>
+     <div class="headline2">
+     
+    </div>
+     <div class="headline">
+     
+    </div>
+  </div>
+  <div class="by">
+    <h3> ♥️ <h2 id="fuck">Fuck</h2> The Way You Code </h3>
+  </div>
+
+	<script>
+    ScrollReveal().reveal('.headline',{ duration: 2000 });
+    ScrollReveal().reveal('.headline',{delay:200});
+    ScrollReveal().reveal('.headline',{ scale: 4.85 });
+		ScrollReveal().reveal('.headline', { distance: '500px' });
+    ScrollReveal().reveal('.headline2',{delay:800});
+    ScrollReveal().reveal('.headline',{delay:800});
+    ScrollReveal().reveal('.headline2',{ duration: 6000 });
+    ScrollReveal().reveal('.headline2',{ distance: '-500px' });
+    ScrollReveal().reveal('.headline2', {
+    rotate: {
+        x: 50,
+        z: 90,
+    }
+    });
+
+    ScrollReveal().reveal('.headline2',{ scale: 9.85 });
+    ScrollReveal().reveal('#fuck',{delay:5000});
+	</script>
+</body>
+</html>
