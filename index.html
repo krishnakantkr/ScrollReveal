@@ -2,9 +2,9 @@
 <html>
 <head>
   <script src="https://unpkg.com/scrollreveal"></script>
-	 <title>Happy Coding</title>
+  <title>Happy Coding</title>
 	<link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1294271945299689472/4fwL9aL7_400x400.jpg">
-	<!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
+  <!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
 </head>
 <body>
   <style>
@@ -16,7 +16,7 @@
       padding: 100px;
     }
     .d{
-      margin-top: 20%;
+      margin-top: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -65,23 +65,13 @@
     <h3> ♥️ <h2 id="fuck">Fuck</h2> The Way You Code </h3>
   </div>
 
-	<script>
-    ScrollReveal().reveal('.headline',{ duration: 2000 });
-    ScrollReveal().reveal('.headline',{delay:200});
-    ScrollReveal().reveal('.headline',{ scale: 4.85 });
-		ScrollReveal().reveal('.headline', { distance: '500px' });
-    ScrollReveal().reveal('.headline2',{delay:800});
-    ScrollReveal().reveal('.headline',{delay:800});
-    ScrollReveal().reveal('.headline2',{ duration: 6000 });
-    ScrollReveal().reveal('.headline2',{ distance: '-500px' });
-    ScrollReveal().reveal('.headline2', {
-    rotate: {
+	<script> 
+  //don't use reset: true;  
+    ScrollReveal().reveal('.headline',{ duration: 2000,delay:200,scale: 4.85,distance: '500px', distance: '500px',delay:800, });
+    ScrollReveal().reveal('.headline2',{delay:800,distance: '-500px',duration: 6000,scale: 9.85, rotate: {
         x: 50,
         z: 90,
-    }
-    });
-
-    ScrollReveal().reveal('.headline2',{ scale: 9.85 });
+    }});
     ScrollReveal().reveal('#fuck',{delay:5000});
 	</script>
 </body>
